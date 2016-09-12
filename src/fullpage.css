@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+html {
+    -ms-touch-action: none; /* 阻止windows Phone 的默认触摸事件 */
+}
+
+body,
+div,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    *cursor: default;
+    overflow: hidden;
+    font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;
+}
+
+.fullpage {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.fullpage-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+}
+
+.fullpage-page.current {
+    display: block;
+    z-index: 1;
+}
+
+.fullpage-page.slide {
+    display: block;
+    z-index: 2;
+}
+
+.fullpage-page.swipe {
+    display: block;
+    z-index: 3;
+}
+
+
+
+
+
+
